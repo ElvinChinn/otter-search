@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Otter Search",
+  "version": "1.0.0",
+  "author": "Elvin Chinn",
+  "default_locale": "zh_CN",
+  "description": "__MSG_extensionDescription__",
+  "icons": {
+    "16": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "background": {
+    "scripts": ["js/shared/constants.js", "js/shared/store.js", "js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "images/logo.png",
+    "default_title": "Otter Search",
+    "default_popup": "pages/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/shared/constants.js", "js/content.js"],
+      "css": ["styles/content.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus"
+  ]
+}

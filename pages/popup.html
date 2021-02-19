@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Otter Search</title>
+  <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body class="popup-wrapper">
+  <div class="popup">
+    <div class="header block">
+      <img src="../images/otter.webp" class="otter" />
+      <h1>Otter Search</h1>
+    </div>
+    <div class="main block">
+      <div class="setting">
+        <div class="setting-item">
+          <div class="setting-item-label">
+            <h3 class="setting-item-label-main">搜索引擎</h3>
+            <p class="setting-item-label-minor">指定以何种搜索引擎进行搜索</p>
+          </div>
+          <div class="setting-item-action">
+            <div class="select" id="engine">
+              <div class="input">
+                <input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="input-inner" data-role="select-trigger" />
+                <span class="input-suffix">
+                  <span class="input-suffix-inner">
+                    <i class="caret"></i>
+                  </span>
+                </span>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-list" data-role="select-dropdown-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <div class="setting-item-label">
+            <h3 class="setting-item-label-main">打开方式</h3>
+            <p class="setting-item-label-minor">指定搜索页面以何种方式打开</p>
+          </div>
+          <div class="setting-item-action">
+            <div class="select" id="open">
+              <div class="input">
+                <input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="input-inner" data-role="select-trigger" />
+                <span class="input-suffix">
+                  <span class="input-suffix-inner">
+                    <i class="caret"></i>
+                  </span>
+                </span>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-list" data-role="select-dropdown-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <div class="setting-item-label">
+            <h3 class="setting-item-label-main">精确搜索</h3>
+            <p class="setting-item-label-minor">是否根据搜索词进行精确搜索</p>
+          </div>
+          <div class="setting-item-action">
+            <div class="select" id="exact">
+              <div class="input">
+                <input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="input-inner" data-role="select-trigger" />
+                <span class="input-suffix">
+                  <span class="input-suffix-inner">
+                    <i class="caret"></i>
+                  </span>
+                </span>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-list" data-role="select-dropdown-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="tips">
+        <img src="../images/thunder.png" class="thunder" />
+        <p class="shortcut">按下 <span>shift + command + s</span> 唤出搜索框</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/shared/constants.js"></script>
+  <script src="../js/shared/store.js"></script>
+  <script src="../js/popup.js"></script>
+</body>
+</html>
